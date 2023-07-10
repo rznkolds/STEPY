@@ -118,6 +118,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
                         data = Uri.parse("package:${requireContext().packageName}")
                     })
                 }
+            } else {
+                toast(getString(R.string.warning))
             }
         }
 

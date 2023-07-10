@@ -9,6 +9,7 @@
     <string name="ex_weight">Esempio : 70 KG</string>
     <string name="target">Obiettivo del Passo</string>
     <string name="ex_target">Esempio : 5000</string>
+    <string name="blanks">Riempire gli spazi vuoti</string>
 
     <!-- ONBOARDING SCREENS -->
 
@@ -46,6 +47,8 @@
     <string name="weekly_kilometer_text">Grafico del chilometraggio settimanale</string>
     <string name="kilometer_target_text">Chilometro :</string>
 
+    <string name="warning">Consentire il servizio</string>
+
     <!-- USER -->
 
     <!-- GENERAL AND COMMON USES -->
@@ -69,8 +72,6 @@
     <!-- SHARE -->
     <string name="share_text">Condividere</string>
 
-    <string name="warning">Hizmet için izin veriniz</string>
-
     <!-- INSTRUCTIONS -->
 
     <string name="count_text">Smette di contare a volte?</string>
@@ -93,5 +94,4 @@
 
     <string name="remove_restriction">Rimuovere la restrizione</string>
     <string name="github_page">Pagina Github</string>
-    <string name="blanks">Boşlukları doldurunuz</string>
 </resources>

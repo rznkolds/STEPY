@@ -9,6 +9,7 @@
     <string name="ex_weight">Örnek : 70 KG</string>
     <string name="target">Adım Hedefi</string>
     <string name="ex_target">Örnek : 5000</string>
+    <string name="blanks">Boşlukları doldurunuz</string>
 
     <!-- ONBOARDING SCREENS -->
 
@@ -46,6 +47,8 @@
     <string name="weekly_kilometer_text">Haftalık Kilometre Tablosu</string>
     <string name="kilometer_target_text">Kilometre : </string>
 
+    <string name="warning">Hizmet için izin veriniz</string>
+
     <!-- USER -->
 
     <!-- GENERAL AND COMMON USES -->
@@ -69,8 +72,6 @@
     <!-- SHARE -->
     <string name="share_text">Paylaş</string>
 
-    <string name="warning">Hizmet için izin veriniz</string>
-
     <!-- INSTRUCTIONS -->
 
     <string name="count_text">Bazen saymayı bırakır mı ?</string>
@@ -93,5 +94,4 @@
 
     <string name="remove_restriction">Kısıtlama Kaldır</string>
     <string name="github_page">GITHUB SAYFASI</string>
-    <string name="blanks">Boşlukları doldurunuz</string>
 </resources>
