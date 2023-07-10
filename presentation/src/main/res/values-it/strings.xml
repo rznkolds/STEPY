@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">STEPY</string>
+
+    <!-- COMMON USES IN THE APPLICATION -->
+
+    <string name="height">Lunghezza</string>
+    <string name="ex_height">Esempio : 180 CM</string>
+    <string name="weight">Peso</string>
+    <string name="ex_weight">Esempio : 70 KG</string>
+    <string name="target">Obiettivo del Passo</string>
+    <string name="ex_target">Esempio : 5000</string>
+
+    <!-- ONBOARDING SCREENS -->
+
+    <!-- COMMON USES -->
+    <string name="next_button">INOLTRARE</string>
+
+    <!-- FIRST SCREEN -->
+    <string name="first_description">Questa applicazione è un software open source. \n \n I dati dell\'utente vengono conservati solo in un\'area sicura specifica dell\'applicazione, sul server locale del dispositivo. \n \n In questo modo, la privacy e la sicurezza dei dati sono mantenute al massimo livello senza interruzioni o trasferimenti esterni</string>
+    <string name="first_start_button">INIZIO</string>
+
+    <!-- SECOND SCREEN -->
+    <string name="second_description">Posso aiutarti a calcolare automaticamente la distanza in chilometri e la combustione delle calorie basandomi sulle tue informazioni personali di altezza e peso</string>
+
+    <!-- THIRD SCREEN -->
+    <string name="third_description">Puoi analizzare l\'obiettivo giornaliero e esaminare in dettaglio i chilometri e le calorie bruciate</string>
+
+    <!-- FOURTH SCREEN -->
+    <string name="fourth_description">Fantastico! \n \n Hai completato tutti i passaggi \n \n Ora puoi sempre controllare i tuoi passi e la quantità di calorie bruciate \n \n Puoi ora monitorarti e raggiungere i tuoi obiettivi</string>
+    <string name="fourth_completion_text">FINE</string>
+
+    <!-- HOME -->
+
+    <!-- GENERAL AND COMMON USES -->
+    <string name="step_text">PASSI</string>
+    <string name="total_text">Totale :</string>
+
+    <!-- STEPS TABLE -->
+    <string name="step_target_text">Passi :</string>
+
+    <!-- CALORIE TABLE -->
+    <string name="weekly_calorie_text">Grafico settimanale delle calorie</string>
+    <string name="calorie_target_text">Calorie :</string>
+
+    <!-- KİLOMETER TABLE -->
+    <string name="weekly_kilometer_text">Grafico del chilometraggio settimanale</string>
+    <string name="kilometer_target_text">Chilometro :</string>
+
+    <!-- USER -->
+
+    <!-- GENERAL AND COMMON USES -->
+    <string name="update_text">AGGIORNAMENTO</string>
+
+    <!-- BODY DATA -->
+    <string name="body_text">Dati corporei</string>
+
+    <!-- THEME -->
+    <string name="theme_text">Stile</string>
+
+    <!-- LANGUAGE -->
+    <string name="language_text">Opzioni di lingua</string>
+
+    <!-- INSTRUCTIONS -->
+    <string name="instructions_text">Istruzioni</string>
+
+    <!-- FEEDBACK -->
+    <string name="feedback_text">Riscontro</string>
+
+    <!-- SHARE -->
+    <string name="share_text">Condividere</string>
+
+    <string name="warning">Hizmet için izin veriniz</string>
+
+    <!-- INSTRUCTIONS -->
+
+    <string name="count_text">Smette di contare a volte?</string>
+    <string name="count_info_text">Non sarà disabilitato a meno che la restrizione del dispositivo non blocchi l\'app.</string>
+
+    <string name="vibration_text">Conta mentre si agita il dispositivo?</string>
+    <string name="vibration_info_text">Se il tuo telefono sta contando mentre è in movimento, potrebbe essere contato a causa del sensore integrato. \nQuesto non è un errore. \n \nContinuiamo a lavorare sodo per una migliore esperienza utente.</string>
+
+    <string name="car_text">Conta durante la guida?</string>
+    <string name="car_info_text">Può contare pochi passi in proporzione alla velocità dell\'auto e allo stato del dispositivo. \n \nStiamo lavorando su questo problema.</string>
+
+    <string name="step_count_text">Conteggio dei passi</string>
+    <string name="step_info_text">Questa applicazione calcola il numero di passi alimentando dal sensore integrato del dispositivo. \n\nPertanto, migliore è il sensore, migliore sarà il funzionamento dell\'applicazione.</string>
+
+    <string name="privacy_text">Sicurezza</string>
+    <string name="privacy_info_text">Questa applicazione offre il 100% di privacy e codici open source. \Quindi puoi sempre accedere alla pagina github dell\'applicazione.</string>
+
+    <string name="distance_text">Calorie e distanza</string>
+    <string name="distance_info_text">Il sistema utilizza i dati relativi all\'altezza e al peso per calcolare le calorie ei dati relativi alla distanza. \n \nAssicurati quindi di aver inserito correttamente i dati .</string>
+
+    <string name="remove_restriction">Rimuovere la restrizione</string>
+    <string name="github_page">Pagina Github</string>
+    <string name="blanks">Boşlukları doldurunuz</string>
+</resources>

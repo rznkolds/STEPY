@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">STEPY</string>
+
+    <!-- COMMON USES IN THE APPLICATION -->
+
+    <string name="height">Length</string>
+    <string name="ex_height">Example : 180 CM</string>
+    <string name="weight">Weight</string>
+    <string name="ex_weight">Example : 70 KG</string>
+    <string name="target">Step Target</string>
+    <string name="ex_target">Example : 5000</string>
+
+    <!-- ONBOARDING SCREENS -->
+
+    <!-- COMMON USES -->
+    <string name="next_button">NEXT</string>
+
+    <!-- FIRST SCREEN -->
+    <string name="first_description">This application is an open-source software \n \n It keeps user data only in a secure, specific area of the application on the device\'s local server \n \n This ensures the privacy and security of the data are maintained at the highest level, protecting it seamlessly without any external transfers</string>
+    <string name="first_start_button">START</string>
+
+    <!-- SECOND SCREEN -->
+    <string name="second_description">I can help you automatically calculate the distance in kilometers and calorie burn based on your personal height and weight information</string>
+
+    <!-- THIRD SCREEN -->
+    <string name="third_description">You can analyze the daily target and examine the kilometer and calorie burn in detail</string>
+
+    <!-- FOURTH SCREEN -->
+    <string name="fourth_description">Great! \n \n You\'ve completed all the steps. \n \n Now you can always track your steps and calorie burn. \n \n You can now monitor yourself and achieve your goals</string>
+    <string name="fourth_completion_text">FINISH</string>
+
+    <!-- HOME -->
+
+    <!-- GENERAL AND COMMON USES -->
+    <string name="step_text">STEP</string>
+    <string name="total_text">Total :</string>
+
+    <!-- STEPS TABLE -->
+    <string name="step_target_text">Step :</string>
+
+    <!-- CALORIE TABLE -->
+    <string name="weekly_calorie_text">Weekly Calorie Chart</string>
+    <string name="calorie_target_text">Calories:</string>
+
+    <!-- KİLOMETER TABLE -->
+    <string name="weekly_kilometer_text">Weekly Mileage Chart</string>
+    <string name="kilometer_target_text">Kilometer :</string>
+
+    <!-- USER -->
+
+    <!-- GENERAL AND COMMON USES -->
+    <string name="update_text">UPDATE</string>
+
+    <!-- BODY DATA -->
+    <string name="body_text">Body data</string>
+
+    <!-- THEME -->
+    <string name="theme_text">Theme</string>
+
+    <!-- LANGUAGE -->
+    <string name="language_text">Language options</string>
+
+    <!-- INSTRUCTIONS -->
+    <string name="instructions_text">Instructions</string>
+
+    <!-- FEEDBACK -->
+    <string name="feedback_text">Feedback</string>
+
+    <!-- SHARE -->
+    <string name="share_text">Share</string>
+
+    <string name="warning">Hizmet için izin veriniz</string>
+
+    <!-- INSTRUCTIONS -->
+
+    <string name="count_text">Does it stop counting sometimes ?</string>
+    <string name="count_info_text">It won\'t be disabled unless device restriction blocks the app.</string>
+
+    <string name="vibration_text">Does it count while shaking the device?</string>
+    <string name="vibration_info_text">If your phone is counting while it is moving, it may be counted due to the built-in sensor. \nThis is not an error. \n \nWe continue to work hard for better user experience.</string>
+
+    <string name="car_text">Does it count while driving?</string>
+    <string name="car_info_text">It can count a few steps in proportion to the speed of the car and the state of the device. \n \nWe are working on this issue .</string>
+
+    <string name="step_count_text">Step Count</string>
+    <string name="step_info_text">This application calculates the number of steps by feeding from the built-in sensor of the device. \n \nTherefore , the better the sensor is manufactured , the better the application will work .</string>
+
+    <string name="privacy_text">Security</string>
+    <string name="privacy_info_text">This application offers 100% privacy and open source codes. \So you can always access the github page of the application.</string>
+
+    <string name="distance_text">Calories and Distance</string>
+    <string name="distance_info_text">The system uses your height and weight data to calculate calories and distance data . \n \nTherefore make sure you have entered the data correctly .</string>
+
+    <string name="remove_restriction">Remove restriction</string>
+    <string name="github_page">Github page</string>
+    <string name="blanks">Boşlukları doldurunuz</string>
+</resources>

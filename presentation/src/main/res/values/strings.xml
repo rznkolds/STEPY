@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">STEPY</string>
+
+    <!-- COMMON USES IN THE APPLICATION -->
+
+    <string name="height">Uzunluk</string>
+    <string name="ex_height">Örnek : 180 CM</string>
+    <string name="weight">Kilo</string>
+    <string name="ex_weight">Örnek : 70 KG</string>
+    <string name="target">Adım Hedefi</string>
+    <string name="ex_target">Örnek : 5000</string>
+
+    <!-- ONBOARDING SCREENS -->
+
+    <!-- COMMON USES -->
+    <string name="next_button">İLERİ</string>
+
+    <!-- FIRST SCREEN -->
+    <string name="first_description">Bu uygulama, açık kaynaklı bir yazılımdır \n \n Kullanıcı verilerini yalnızca uygulamaya özgü güvenli bir alanda, cihazın yerel sunucusunda tutar \n \n Bu sayede verilerin gizliliği ve güvenliği en üst düzeyde tutulur dışarıya aktarım olmadan kesintisiz bir şekilde korunur</string>
+    <string name="first_start_button">BAŞLA</string>
+
+    <!-- SECOND SCREEN -->
+    <string name="second_description">Senin kişisel uzunluk ve kilo bilgilerini alarak otomatik olarak kilometre ve kalori yakımını hesaplamamıza yardımcı olabilirsin</string>
+
+    <!-- THIRD SCREEN -->
+    <string name="third_description">Günlük hedef ile kilometre ve kalori yakımını detaylı şekilde analiz edebilirsin</string>
+
+    <!-- FOURTH SCREEN -->
+    <string name="fourth_description">Harika! \n \n Bütün adımları tamamladın \n \n Şimdi her zaman adımları ve kalori yakımını kontrol edebilirsin \n \n Artık kendini izleyebilir ve hedeflerine ulaşabilirsin</string>
+    <string name="fourth_completion_text">GEÇ</string>
+
+    <!-- HOME -->
+
+    <!-- GENERAL AND COMMON USES -->
+    <string name="step_text">Adım</string>
+    <string name="total_text">Toplam : </string>
+
+    <!-- STEPS TABLE -->
+    <string name="step_target_text">Adım : </string>
+
+    <!-- CALORIE TABLE -->
+    <string name="weekly_calorie_text">Haftalık Kalori Tablosu</string>
+    <string name="calorie_target_text">Kalori : </string>
+
+    <!-- KİLOMETER TABLE -->
+    <string name="weekly_kilometer_text">Haftalık Kilometre Tablosu</string>
+    <string name="kilometer_target_text">Kilometre : </string>
+
+    <!-- USER -->
+
+    <!-- GENERAL AND COMMON USES -->
+    <string name="update_text">GÜNCELLE</string>
+
+    <!-- BODY DATA -->
+    <string name="body_text">Vücut verileri</string>
+
+    <!-- THEME -->
+    <string name="theme_text">Tema</string>
+
+    <!-- LANGUAGE -->
+    <string name="language_text">Dil seçenekleri</string>
+
+    <!-- INSTRUCTIONS -->
+    <string name="instructions_text">Talimatlar</string>
+
+    <!-- FEEDBACK -->
+    <string name="feedback_text">Geri Bildirim</string>
+
+    <!-- SHARE -->
+    <string name="share_text">Paylaş</string>
+
+    <string name="warning">Hizmet için izin veriniz</string>
+
+    <!-- INSTRUCTIONS -->
+
+    <string name="count_text">Bazen saymayı bırakır mı ?</string>
+    <string name="count_info_text">Cihaz kısıtlaması uygulamayı engellemediği sürece devre dışı kalmaz .</string>
+
+    <string name="vibration_text">Cihazı sallarken sayar mı ?</string>
+    <string name="vibration_info_text">Telefonunuz hareket ederken sayıyorsa yerleşik sensör sebebiyle sayılabilir . \nBu bir hata değildir . \n \nDaha iyi kullanıcı deneyimi için çok çalışmaya devam ediyoruz .</string>
+
+    <string name="car_text">Araba sürerken sayar mı ?</string>
+    <string name="car_info_text">Arabanın hızına ve cihazın durumuna oranla birkaç adım sayabilir . \n \nBu sorun üzerinde çalışıyoruz .</string>
+
+    <string name="step_count_text">Adım Sayımı</string>
+    <string name="step_info_text">Bu uygulama cihazın yerleşik sensöründen beslenerek adım sayımını hesaplar . \n \nBu nedenle sensör ne kadar iyi bir şekilde üretilmişse uygulama o oranla iyi çalışacaktır .</string>
+
+    <string name="privacy_text">Gizlilik</string>
+    <string name="privacy_info_text">Bu uygulama %100 gizlilik ve açık kaynak kodlar sunmaktadır . \nBu nedenle istediğiniz zaman uygulamanın github sayfasına ulaşabilirsiniz .</string>
+
+    <string name="distance_text">Kalori ve Uzaklık</string>
+    <string name="distance_info_text">Sistem , kalori ve mesafe verilerini hesaplamak için boy ve kilo verilerinizden yararlanır . \n \nBu nedenle verileri doğru girdiğinizden emin olunuz .</string>
+
+    <string name="remove_restriction">Kısıtlama Kaldır</string>
+    <string name="github_page">GITHUB SAYFASI</string>
+    <string name="blanks">Boşlukları doldurunuz</string>
+</resources>

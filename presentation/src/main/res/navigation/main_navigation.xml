@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splash" >
+
+    <fragment
+        android:label="view_pager"
+        android:id="@+id/view_pager"
+        android:name="com.rk.presentation.onboarding.ViewPagerFragment" >
+        <action
+            android:id="@+id/action_view_pager_to_main"
+            app:destination="@id/main"
+            app:enterAnim="@anim/open_component_from_right"
+            app:popUpTo="@id/main_navigation" />
+    </fragment>
+
+    <fragment
+        android:label="Splash"
+        android:id="@+id/splash"
+        android:name="com.rk.presentation.splash.SplashFragment" >
+
+        <action
+            android:id="@+id/action_splash_to_view_pager"
+            app:destination="@id/view_pager"
+            app:popUpTo="@id/main_navigation" />
+        <action
+            android:id="@+id/action_splash_to_main"
+            app:destination="@id/main"
+            app:enterAnim="@anim/open_component_from_right"
+            app:popUpTo="@id/main_navigation" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/main"
+        android:name="com.rk.presentation.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+
+</navigation>

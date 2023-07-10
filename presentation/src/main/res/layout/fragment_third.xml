@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".onboarding.screens.third.ThirdFragment"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/third_screen_animation"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="30dp"
+        app:lottie_rawRes="@raw/third_screen_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintBottom_toTopOf="@+id/target_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/target_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        app:helperTextEnabled="true"
+        app:helperText="@string/ex_target"
+        style="@style/CustomInput"
+        app:layout_constraintTop_toBottomOf="@+id/third_screen_animation"
+        app:layout_constraintBottom_toTopOf="@+id/third_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/target_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/target"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/third_description"
+        style="@style/CustomStartText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/third_description"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/third_next_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/target_layout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/third_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/next_button"
+        style="@style/CustomStartButton"
+        app:layout_constraintTop_toBottomOf="@+id/third_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

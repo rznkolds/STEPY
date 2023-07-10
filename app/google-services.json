@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "666794327363",
+    "project_id": "stepy-9013",
+    "storage_bucket": "stepy-9013.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666794327363:android:2c262254d9bd8f6efbc3f6",
+        "android_client_info": {
+          "package_name": "com.rk.stepy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666794327363-obqnd7l02hem90kbn2sfd0h07upnh19m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rk.stepy",
+            "certificate_hash": "658975358b4fbce40f2ee8a152594884cca5a5e4"
+          }
+        },
+        {
+          "client_id": "666794327363-b7gi3784c6mfclcg32jp99o6u5iaudpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZyY1XFsDB0fzshWb0yqXj6Mk8WklXfXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666794327363-b7gi3784c6mfclcg32jp99o6u5iaudpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="6dp"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/progress_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:text="19"
+        style="@style/CustomText"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintBottom_toTopOf="@+id/mon_step_progress"
+        app:layout_constraintEnd_toEndOf="@+id/mon_step_progress"
+        app:layout_constraintStart_toStartOf="@+id/mon_step_progress"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/CustomVerticalProgress"
+        android:layout_width="20dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toStartOf="@+id/tue_step_progress"
+        app:layout_constraintBottom_toTopOf="@+id/mon_step_text"
+        app:layout_constraintTop_toBottomOf="@+id/mon_step_day"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:text="Mon"
+        style="@style/CustomText"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/mon_step_progress"
+        app:layout_constraintTop_toBottomOf="@+id/mon_step_progress"
+        app:layout_constraintBottom_toTopOf="@+id/step_target_text"
+        app:layout_constraintEnd_toEndOf="@+id/mon_step_progress" />
+</androidx.appcompat.widget.LinearLayoutCompat>
