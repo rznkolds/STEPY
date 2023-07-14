@@ -8,6 +8,10 @@ This project saves your steps, calories burned and mileage calculation of steps 
 
 You can examine this project thanks to its open source structure and learn where and how the data is kept.
 
+<a href="https://play.google.com/store/apps/details?id=com.rk.stepy">
+   <img src="https://static-00.iconduck.com/assets.00/google-play-icon-2048x2048-487quz63.png" width="200" height="200">
+</a>
+
 ## Project features
  - Jetpack
      - [Flow][1] : Flow is conceptually a stream of data that can be computed asynchronously.
