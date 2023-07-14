@@ -65,6 +65,12 @@ dependencies {
     // FLEXBOX
     implementation 'com.google.android.flexbox:flexbox:3.0.0'
 
+    // SDP
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+    // SSP
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
     // CORE MODULE
     implementation project(':core')
 }

@@ -139,7 +139,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
     private fun ads() {
 
-        val id = "ca-app-pub-3940256099942544/1033173712"
+        val id = "ca-app-pub-4745637721803863~5810692589"
 
         val request = AdRequest.Builder().build()
 

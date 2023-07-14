@@ -11,31 +11,30 @@
         android:id="@+id/fourth_screen_animation"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:src="@drawable/super_human_icon"
+        app:layout_constraintVertical_chainStyle="spread_inside"
         app:layout_constraintBottom_toTopOf="@+id/fourth_description"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread_inside" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/fourth_description"
         style="@style/CustomStartText"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
         android:text="@string/fourth_description"
-        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_screen_animation"
         app:layout_constraintBottom_toTopOf="@+id/forth_finish_button"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fourth_screen_animation" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/forth_finish_button"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/_40sdp"
         android:text="@string/fourth_completion_text"
         style="@style/CustomStartButton"
         app:layout_constraintTop_toBottomOf="@+id/fourth_description"

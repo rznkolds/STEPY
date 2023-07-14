@@ -26,7 +26,6 @@ import com.rk.presentation.instructions.InstructionActivity
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.Locale
 
-
 @AndroidEntryPoint
 class UserFragment : Fragment(R.layout.fragment_user) {
 
@@ -38,17 +37,11 @@ class UserFragment : Fragment(R.layout.fragment_user) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        locale = Locale.getDefault()
-
         MobileAds.initialize(requireContext())
 
+        locale = Locale.getDefault()
+
         with(binding) {
-
-            if (network()) { banner.loadAd(AdRequest.Builder().build()) }
-
-            instructionsCard.setOnClickListener {
-                startActivity(Intent(requireContext(),InstructionActivity::class.java))
-            }
 
             bodyCard.setOnClickListener {
                 updateBodyLayout.apply {
@@ -74,6 +67,8 @@ class UserFragment : Fragment(R.layout.fragment_user) {
                         weight.toString().toInt(),
                         height.toString().toInt()
                     )
+
+                    updateWeightEditxt.requestFocus()
                 } else {
                     toast(getString(R.string.blanks))
                 }
@@ -88,12 +83,14 @@ class UserFragment : Fragment(R.layout.fragment_user) {
                     viewModel.addTarget(
                         target.toString().toInt()
                     )
+
+                    updateTargetEditxt.requestFocus()
                 } else {
                     toast(getString(R.string.blanks))
                 }
             }
 
-            if (mode()) { themeSwitch.isChecked = true }
+            if (mode()) themeSwitch.isChecked = true
 
             themeSwitch.setOnCheckedChangeListener { _, checked ->
                 if (checked) {
@@ -103,13 +100,15 @@ class UserFragment : Fragment(R.layout.fragment_user) {
                 }
             }
 
+            instructionsCard.setOnClickListener { startActivity(Intent(requireContext(),InstructionActivity::class.java)) }
+
+            shareCard.setOnClickListener { open("https://play.google.com/store/apps/details?id=com.rk.stepy") }
+
             linkedln.setOnClickListener { open("https://www.linkedin.com/in/rznkolds") }
 
             github.setOnClickListener { open("https://github.com/rznkolds") }
 
-            shareCard.setOnClickListener { }
-
-            languageText.setOnClickListener { it.menu() }
+            if (network()) banner.loadAd(AdRequest.Builder().build())
 
             feedbackCard.setOnClickListener { send() }
 

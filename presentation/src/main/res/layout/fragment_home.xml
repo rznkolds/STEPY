@@ -16,7 +16,8 @@
             android:id="@+id/succes_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
             style="@style/CustomCardview"
             app:layout_constraintVertical_chainStyle="spread_inside"
             app:layout_constraintBottom_toTopOf="@+id/temp_progress"
@@ -27,12 +28,12 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="6dp">
+                android:padding="@dimen/_6sdp">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/achievements"
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
+                    android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +49,7 @@
             style="@style/CustomProgress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="@dimen/_10sdp"
             app:layout_constraintBottom_toTopOf="@+id/home_card"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize="40sp"
+            android:textSize="@dimen/_40ssp"
             style="@style/CustomText"
             app:layout_constraintBottom_toBottomOf="@+id/temp_progress"
             app:layout_constraintStart_toStartOf="@+id/temp_progress"
@@ -71,7 +72,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/step_text"
-            android:textSize="14sp"
             style="@style/CustomText"
             app:layout_constraintStart_toStartOf="@+id/temp_step"
             app:layout_constraintTop_toBottomOf="@+id/temp_step"
@@ -81,8 +81,8 @@
             android:id="@+id/home_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
             style="@style/CustomCardview"
             app:layout_constraintTop_toBottomOf="@+id/temp_progress"
             app:layout_constraintBottom_toTopOf="@+id/step_card"
@@ -91,14 +91,14 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="@dimen/_60sdp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/kcal_icon"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
                     android:src="@drawable/standart_kcal_icon"
                     app:layout_constraintVertical_chainStyle="spread"
                     app:layout_constraintBottom_toTopOf="@+id/temp_kcal"
@@ -119,9 +119,9 @@
 
                 <View
                     android:id="@+id/space_one"
-                    android:layout_width="3dp"
+                    android:layout_width="@dimen/_2sdp"
                     android:layout_height="0dp"
-                    android:layout_marginVertical="4dp"
+                    android:layout_marginVertical="@dimen/_4sdp"
                     android:background="#DEDEDE"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/bmi_icon"
@@ -130,8 +130,8 @@
 
                 <ImageView
                     android:id="@+id/bmi_icon"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
                     android:src="@drawable/standart_bmi_icon"
                     app:layout_constraintVertical_chainStyle="spread"
                     app:layout_constraintBottom_toTopOf="@+id/temp_bmi"
@@ -152,9 +152,9 @@
 
                 <View
                     android:id="@+id/space_two"
-                    android:layout_width="3dp"
+                    android:layout_width="@dimen/_2sdp"
                     android:layout_height="0dp"
-                    android:layout_marginVertical="4dp"
+                    android:layout_marginVertical="@dimen/_4sdp"
                     android:background="#DEDEDE"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/km_icon"
@@ -163,8 +163,8 @@
 
                 <ImageView
                     android:id="@+id/km_icon"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
                     android:src="@drawable/standart_km_icon"
                     app:layout_constraintBottom_toTopOf="@+id/temp_km"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -191,9 +191,9 @@
             android:id="@+id/step_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
             style="@style/CustomCardview"
+            android:layout_marginBottom="@dimen/_6sdp"
             app:layout_constraintBottom_toTopOf="@+id/kalorie_card"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -206,9 +206,9 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/steps"
                     android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:layout_marginVertical="@dimen/_6sdp"
                     app:layout_constraintBottom_toTopOf="@+id/step_target_text"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -217,12 +217,12 @@
 
                 <TextView
                     android:id="@+id/step_target_text"
+                    style="@style/CustomText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginVertical="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:text="@string/step_target_text"
-                    style="@style/CustomText"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/steps" />
@@ -232,7 +232,7 @@
                     style="@style/CustomText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
+                    android:layout_marginStart="@dimen/_4sdp"
                     android:text="0"
                     app:layout_constraintBottom_toBottomOf="@+id/step_target_text"
                     app:layout_constraintStart_toEndOf="@+id/step_target_text"
@@ -243,7 +243,7 @@
                     style="@style/CustomText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="4dp"
+                    android:layout_marginEnd="@dimen/_4sdp"
                     android:text="@string/total_text"
                     app:layout_constraintBottom_toBottomOf="@+id/step_target_text"
                     app:layout_constraintEnd_toStartOf="@+id/step_total"
@@ -251,14 +251,14 @@
 
                 <TextView
                     android:id="@+id/step_total"
+                    style="@style/CustomText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:text="0"
-                    style="@style/CustomText"
                     app:layout_constraintBottom_toBottomOf="@+id/step_target_text"
-                    app:layout_constraintTop_toTopOf="@+id/step_target_text"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="@+id/steps"
+                    app:layout_constraintTop_toTopOf="@+id/step_target_text" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -268,13 +268,11 @@
             android:id="@+id/kalorie_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
             style="@style/CustomCardview"
             app:layout_constraintBottom_toTopOf="@+id/kilometer_card"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/step_card">
 
@@ -286,8 +284,8 @@
                     android:id="@+id/kalories_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="20dp"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginVertical="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:text="@string/weekly_calorie_text"
                     style="@style/CustomText"
                     app:layout_constraintVertical_chainStyle="spread_inside"
@@ -297,9 +295,9 @@
 
                 <ImageView
                     android:id="@+id/kalories_icon"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:src="@drawable/open_icon"
                     app:layout_constraintBottom_toBottomOf="@+id/kalories_text"
                     app:layout_constraintTop_toTopOf="@+id/kalories_text"
@@ -309,7 +307,7 @@
                     android:id="@+id/calories_layout"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:visibility="gone"
+                    android:visibility="visible"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -318,8 +316,8 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/calories"
                         android:layout_width="match_parent"
-                        android:layout_height="180dp"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_6sdp"
                         app:layout_constraintBottom_toTopOf="@+id/calorie_target_text"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -331,11 +329,11 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginVertical="10dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/calorie_target_text"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/calories"
                         app:layout_constraintTop_toBottomOf="@+id/calories" />
 
                     <TextView
@@ -343,7 +341,7 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
+                        android:layout_marginStart="@dimen/_4sdp"
                         android:text="0.0"
                         app:layout_constraintBottom_toBottomOf="@+id/calorie_target_text"
                         app:layout_constraintStart_toEndOf="@+id/calorie_target_text"
@@ -354,7 +352,7 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="4dp"
+                        android:layout_marginEnd="@dimen/_4sdp"
                         android:text="@string/total_text"
                         app:layout_constraintBottom_toBottomOf="@+id/calorie_target_text"
                         app:layout_constraintEnd_toStartOf="@+id/calorie_total"
@@ -363,12 +361,12 @@
                     <TextView
                         android:id="@+id/calorie_total"
                         style="@style/CustomText"
+                        android:layout_marginEnd="@dimen/_10sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
                         android:text="0"
                         app:layout_constraintBottom_toBottomOf="@+id/calorie_target_text"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/calories"
                         app:layout_constraintTop_toTopOf="@+id/calorie_target_text" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -381,8 +379,8 @@
             android:id="@+id/kilometer_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
             style="@style/CustomCardview"
             app:layout_constraintTop_toBottomOf="@+id/kalorie_card"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -409,9 +407,9 @@
 
                 <ImageView
                     android:id="@+id/kilometer_icon"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:src="@drawable/open_icon"
                     app:layout_constraintBottom_toBottomOf="@+id/kilometer_text"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -430,8 +428,8 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/kilometers"
                         android:layout_width="match_parent"
-                        android:layout_height="180dp"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_6sdp"
                         app:layout_constraintBottom_toTopOf="@+id/kilometer_target_text"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -443,8 +441,8 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginVertical="10dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/kilometer_target_text"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -456,7 +454,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="10dp"
-                        android:layout_marginStart="4dp"
+                        android:layout_marginStart="@dimen/_4sdp"
                         android:text="0.0"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/kilometer_target_text"
@@ -467,7 +465,7 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="4dp"
+                        android:layout_marginEnd="@dimen/_4sdp"
                         android:text="@string/total_text"
                         app:layout_constraintBottom_toBottomOf="@+id/kilometer_target_text"
                         app:layout_constraintEnd_toStartOf="@+id/kilometer_total"
@@ -478,11 +476,11 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
                         android:text="0"
                         app:layout_constraintBottom_toBottomOf="@+id/kilometer_target_text"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/kilometer_target_text" />
+                        app:layout_constraintTop_toTopOf="@+id/kilometer_target_text"
+                        app:layout_constraintEnd_toEndOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

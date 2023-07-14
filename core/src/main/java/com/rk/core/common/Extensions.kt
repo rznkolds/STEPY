@@ -3,8 +3,11 @@ package com.rk.core.common
 import android.content.Context
 import android.icu.text.SimpleDateFormat
 import android.net.ConnectivityManager
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment

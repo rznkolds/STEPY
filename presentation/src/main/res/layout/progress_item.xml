@@ -2,7 +2,7 @@
 <androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginHorizontal="6dp"
+    android:layout_marginHorizontal="@dimen/_2sdp"
     android:gravity="center_horizontal"
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
@@ -12,7 +12,7 @@
         android:id="@+id/progress_day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="4dp"
+        android:layout_marginVertical="@dimen/_4sdp"
         android:text="19"
         style="@style/CustomText"
         app:layout_constraintVertical_chainStyle="spread"
@@ -24,8 +24,8 @@
     <ProgressBar
         android:id="@+id/progress"
         style="@style/CustomVerticalProgress"
-        android:layout_width="20dp"
-        android:layout_height="120dp"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_100sdp"
         app:layout_constraintEnd_toStartOf="@+id/tue_step_progress"
         app:layout_constraintBottom_toTopOf="@+id/mon_step_text"
         app:layout_constraintTop_toBottomOf="@+id/mon_step_day"
@@ -35,7 +35,7 @@
         android:id="@+id/progress_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="4dp"
+        android:layout_marginVertical="@dimen/_4sdp"
         android:text="Mon"
         style="@style/CustomText"
         android:layout_gravity="center"
@@ -43,4 +43,5 @@
         app:layout_constraintTop_toBottomOf="@+id/mon_step_progress"
         app:layout_constraintBottom_toTopOf="@+id/step_target_text"
         app:layout_constraintEnd_toEndOf="@+id/mon_step_progress" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -7,13 +7,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application android:theme="@style/Theme.STEPY">
+
         <activity
             android:name=".instructions.InstructionActivity"
             android:exported="false" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" />
+            android:value="ca-app-pub-4745637721803863~2341117217" />
+
     </application>
 
 </manifest>

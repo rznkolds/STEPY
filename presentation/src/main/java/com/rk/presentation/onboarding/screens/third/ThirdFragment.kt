@@ -31,11 +31,11 @@ class ThirdFragment : Fragment(R.layout.fragment_third) {
                     viewModel.addTarget(
                         target.toString().toInt()
                     )
+
+                    next(R.id.pagers, 3)
                 } else {
                     toast(getString(R.string.blanks))
                 }
-
-                next(R.id.pagers, 3)
             }
         }
     }

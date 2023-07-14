@@ -35,11 +35,11 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
                         weight.toString().toInt(),
                         height.toString().toInt()
                     )
+
+                    next(R.id.pagers, 2)
                 } else {
                     toast(getString(R.string.blanks))
                 }
-
-                next(R.id.pagers, 2)
             }
         }
     }

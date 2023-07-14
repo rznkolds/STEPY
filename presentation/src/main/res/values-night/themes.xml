@@ -88,6 +88,7 @@
 
     <style name="CustomButton" parent="Widget.MaterialComponents.Button">
 
+        <item name="android:textSize">@dimen/_12ssp</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="backgroundTint">#1A2632</item>
         <item name="cornerRadius">70dp</item>
@@ -116,9 +117,21 @@
 
     <style name="CustomText" parent="Widget.MaterialComponents.TextView">
 
+        <item name="android:textSize">@dimen/_10ssp</item>
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <!-- INPUT LANGUAGE LAYOUT -->
+
+    <style name="CustomLanguageInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxStrokeColor">#FFFFFF</item>
+        <item name="hintTextColor">#FFFFFF</item>
     </style>
 
     <!-- INPUT LAYOUT -->
@@ -132,6 +145,13 @@
         <item name="boxStrokeColor">#FFFFFF</item>
         <item name="hintTextColor">#FFFFFF</item>
         <item name="endIconMode">clear_text</item>
+    </style>
+
+    <!-- POP UP MENU -->
+
+    <style name="popupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+
+        <item name="android:popupBackground">@drawable/pop_up_background</item>
     </style>
 
 </resources>

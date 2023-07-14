@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/user_main_constraint"
@@ -15,7 +14,8 @@
         app:layout_constraintBottom_toTopOf="@+id/banner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="9">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/user_constraint_layout"
@@ -27,8 +27,9 @@
                 style="@style/CustomCardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
                 app:layout_constraintBottom_toTopOf="@+id/target_card"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -44,8 +45,8 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginVertical="20dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginVertical="@dimen/_14sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/body_text"
                         app:layout_constraintBottom_toTopOf="@+id/update_body_layout"
                         app:layout_constraintStart_toStartOf="parent"
@@ -54,9 +55,9 @@
 
                     <ImageView
                         android:id="@+id/body_icon"
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
-                        android:layout_marginEnd="20dp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
                         android:src="@drawable/open_icon"
                         app:layout_constraintBottom_toBottomOf="@+id/body_text"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -75,11 +76,12 @@
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/update_height_input"
                             style="@style/CustomInput"
-                            android:layout_width="200dp"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginVertical="10dp"
-                            android:layout_marginStart="10dp"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
                             app:layout_constraintBottom_toTopOf="@+id/update_weight_input"
+                            app:layout_constraintEnd_toStartOf="@+id/update_body_btn"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -97,17 +99,15 @@
                             style="@style/CustomInput"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-
                             app:layout_constraintBottom_toTopOf="@+id/update_body_btn"
                             app:layout_constraintEnd_toEndOf="@+id/update_height_input"
-                            app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="@+id/update_height_input"
                             app:layout_constraintTop_toBottomOf="@+id/update_height_input">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/update_weight_editxt"
                                 android:layout_width="match_parent"
-                                android:layout_height="60dp"
+                                android:layout_height="wrap_content"
                                 android:hint="@string/weight"
                                 android:inputType="number" />
 
@@ -118,8 +118,8 @@
                             style="@style/CustomButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginVertical="10dp"
-                            android:layout_marginEnd="10dp"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
                             android:text="@string/update_text"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -136,8 +136,8 @@
                 style="@style/CustomCardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
                 app:layout_constraintBottom_toTopOf="@+id/theme_card"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -153,8 +153,8 @@
                         style="@style/CustomInput"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginVertical="10dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/update_target_btn"
                         app:layout_constraintStart_toStartOf="parent"
@@ -163,7 +163,8 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/update_target_editxt"
                             android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_height="wrap_content"
+                            android:autoSizeTextType="uniform"
                             android:hint="@string/target"
                             android:inputType="number" />
 
@@ -174,7 +175,7 @@
                         style="@style/CustomButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
                         android:text="@string/update_text"
                         app:layout_constraintBottom_toBottomOf="@+id/update_target_input"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -190,8 +191,8 @@
                 style="@style/CustomCardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
                 app:layout_constraintBottom_toTopOf="@+id/language_card"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -206,8 +207,8 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginVertical="20dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginVertical="@dimen/_14sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         android:text="@string/theme_text"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/theme_switch"
@@ -217,16 +218,15 @@
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/theme_switch"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         style="@style/CustomSwitch"
-                        android:layout_marginEnd="20dp"
-                        app:track="@drawable/custom_track"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
                         android:thumb="@drawable/custom_thumb"
                         app:layout_constraintBottom_toBottomOf="@+id/theme_text"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/theme_text"
-                        app:layout_constraintTop_toTopOf="@+id/theme_text" />
+                        app:layout_constraintTop_toTopOf="@+id/theme_text"
+                        app:track="@drawable/custom_track" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -237,8 +237,8 @@
                 style="@style/CustomCardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
                 app:layout_constraintBottom_toTopOf="@+id/instructions_card"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -253,8 +253,9 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginVertical="20dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginVertical="@dimen/_14sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:autoSizeTextType="uniform"
                         android:text="@string/language_text"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/language"
@@ -262,17 +263,18 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/language"
-                        style="@style/CustomText"
+                        android:text="TR"
+                        style="@style/CustomButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        android:text="TR"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
                         app:layout_constraintBottom_toBottomOf="@+id/language_text"
-                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/language_text"
-                        app:layout_constraintTop_toTopOf="@+id/language_text" />
+                        app:layout_constraintTop_toTopOf="@+id/language_text"
+                        app:layout_constraintEnd_toEndOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -283,8 +285,8 @@
                 style="@style/CustomCardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
                 app:layout_constraintBottom_toTopOf="@+id/feedback_card"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -300,7 +302,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="20dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:autoSizeTextType="uniform"
                         android:text="@string/instructions_text"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/instructions_icon"
@@ -310,9 +313,9 @@
 
                     <ImageView
                         android:id="@+id/instructions_icon"
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
-                        android:layout_marginEnd="20dp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
                         android:src="@drawable/next_icon"
                         app:layout_constraintBottom_toBottomOf="@+id/instructions_text"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -328,8 +331,8 @@
                 style="@style/CustomCardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
                 app:layout_constraintBottom_toTopOf="@+id/share_card"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -344,8 +347,9 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginVertical="20dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginVertical="@dimen/_14sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:autoSizeTextType="uniform"
                         android:text="@string/feedback_text"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/feedback_icon"
@@ -355,9 +359,9 @@
 
                     <ImageView
                         android:id="@+id/feedback_icon"
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
-                        android:layout_marginEnd="20dp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
                         android:src="@drawable/next_icon"
                         app:layout_constraintBottom_toBottomOf="@+id/feedback_text"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -373,8 +377,8 @@
                 style="@style/CustomCardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
                 app:layout_constraintBottom_toTopOf="@+id/linkedln"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -389,8 +393,9 @@
                         style="@style/CustomText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginVertical="20dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginVertical="@dimen/_14sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:autoSizeTextType="uniform"
                         android:text="@string/share_text"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/share_icon"
@@ -400,9 +405,9 @@
 
                     <ImageView
                         android:id="@+id/share_icon"
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
-                        android:layout_marginEnd="20dp"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
                         android:src="@drawable/next_icon"
                         app:layout_constraintBottom_toBottomOf="@+id/share_text"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -415,18 +420,18 @@
 
             <ImageView
                 android:id="@+id/linkedln"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
                 android:src="@drawable/linkedin_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/share_card"
                 app:layout_constraintTop_toBottomOf="@+id/share_card" />
 
             <ImageView
                 android:id="@+id/github"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_10sdp"
                 android:src="@drawable/github_icon"
                 app:layout_constraintBottom_toBottomOf="@+id/linkedln"
                 app:layout_constraintStart_toEndOf="@+id/linkedln"
@@ -437,6 +442,7 @@
                 style="@style/CustomText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
                 android:text="Version : 1.0.0"
                 app:layout_constraintBottom_toBottomOf="@+id/github"
                 app:layout_constraintEnd_toEndOf="@+id/share_card"
@@ -448,14 +454,15 @@
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/banner"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:adSize="SMART_BANNER"
-        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:adUnitId="ca-app-pub-4745637721803863/5322503777"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_scroll"
+        app:layout_constraintVertical_weight="1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
