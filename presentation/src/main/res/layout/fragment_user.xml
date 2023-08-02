@@ -5,7 +5,7 @@
     android:id="@+id/user_main_constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user.UserFragment">
+    tools:context=".ui.user.UserFragment">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/user_scroll"

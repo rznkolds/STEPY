@@ -16,3 +16,5 @@ rootProject.name = "STEPY"
 include ':app'
 include ':core'
 include ':presentation'
+include ':domain'
+include ':data'

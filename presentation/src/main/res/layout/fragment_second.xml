@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding.screens.second.SecondFragment">
+    tools:context=".ui.onboarding.screens.second.SecondFragment">
 
     <LinearLayout
         android:id="@+id/second_inner_layout"

@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/action_home"
-        android:name="com.rk.presentation.home.HomeFragment"
+        android:name="com.rk.presentation.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/action_user"
-        android:name="com.rk.presentation.user.UserFragment"
+        android:name="com.rk.presentation.ui.user.UserFragment"
         android:label="fragment_user"
         tools:layout="@layout/fragment_user"/>
 </navigation>

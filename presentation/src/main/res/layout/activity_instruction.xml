@@ -6,7 +6,7 @@
     android:id="@+id/instruction_scroll"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".instructions.InstructionActivity">
+    tools:context=".ui.instructions.InstructionActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
